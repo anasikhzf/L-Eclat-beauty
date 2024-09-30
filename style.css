@@ -150,8 +150,8 @@ section {
     padding: 20px;
 }
 
-.home image {
-    max-width: 400px;
+.home-image {
+    max-width: 50%;
     border-radius: 10px;
     align-content: center;
 }

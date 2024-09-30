@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking -  L'Eclat beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-image">
+            <span> L'Eclat beauty</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="booking">
+        <h2>Booking Layanan</h2>
+        <br>
+        <p>
+            Terima kasih telah memilih L'Eclat Beauty! Kami siap membantu Anda tampil memukau untuk setiap acara istimewa. Isi formulir di bawah ini untuk memesan layanan kami. Pastikan untuk mengisi semua informasi dengan benar agar kami dapat melayani Anda dengan baik. Jika ada pertanyaan, jangan ragu untuk menghubungi kami melalui halaman <a href="contact.html">kontak</a> kami.
+        </p>
+        <br>
+        <h3>Makeup Dasar</h3>
+        <p>Riasan natural untuk keseharian atau acara informal.</p>
+        <br>
+        <h3>Makeup Pengantin</h3>
+        <p>eksklusif untuk hari pernikahan Anda, dirancang untuk memberikan tampilan memukau dan tahan lama.</p>
+        <br>
+        <h3>Makeup Acara Spesial</h3>
+        <p>Riasan glamor untuk acara formal seperti pesta, gala, atau pemotretan khusus.</p>
+        <br>
+        <p>
+            Setelah mengisi formulir, tim kami akan menghubungi Anda untuk konfirmasi detail dan mengatur jadwal. Kami sangat menantikan untuk menjadi bagian dari momen spesial Anda.
+        </p>
+        <br>
+    
+        <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Nama hanya boleh mengandung huruf dan spasi">
+            
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+    
+            <label for="telepon">No. Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,15}" title="Masukkan nomor telepon yang benar, minimal 10 digit dan maksimal 15 digit angka">
+    
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="service">Layanan:</label>
+            <select id="service" name="service" required>
+                <option value="Makeup Dasar">Makeup Dasar</option>
+                <option value="Makeup Pengantin">Makeup Pengantin</option>
+                <option value="Makeup Acara Spesial">Makeup Acara Spesial</option>
+            </select>
+    
+            <button class="btn" type="submit">Booking Sekarang</button>
+        </form>
+    </section>
+    
+
+
+    
+    <footer id="footer">
+        <p>&copy; 2024- L'Eclat beauty. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

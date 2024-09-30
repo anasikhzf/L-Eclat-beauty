@@ -1,0 +1,425 @@
+/* BODY STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #FFEBD4;
+    color: #333;
+    height: 100vh;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: 1px solid #F0A8D0;
+    box-shadow: 0 0 5px rgba(240, 168, 208, 0.5);
+}
+
+button.btn {
+    background-color: #F0A8D0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #e091c0;
+}
+
+button.btn:active {
+    background-color: #d67fa9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+/*HEADER STYLE*/
+header {
+    background: #F0A8D0;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 50px; 
+    margin-right: 10px; 
+    border-radius: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+section {
+    padding: 20px 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/*HOME STYLE*/
+#home {
+    background: #ffffff;
+    color: #333;
+    text-align: center;
+    justify-content: center;
+}
+
+.centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    align-items: center;
+    padding: 20px;
+}
+
+.home image {
+    max-width: 400px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.text-content h2, .text-content h3 {
+    font-family: 'Lora', serif;
+}
+
+.text-content p {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.buttons .btn:hover {
+    background-color: #008fbf;
+}
+
+/*GALLERY STYLE*/
+#gallery {
+    background: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+#gallery h2, #gallery h3 {
+    font-family: 'Lora', serif;
+}
+
+#gallery p {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 15px;
+    margin: 0 auto;
+    justify-items: center; 
+}
+
+.gallery img {
+    width: 100px;
+    border-radius: 10px;
+    transition: var(1.05);
+    border: 2px solid #F0A8D0; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.popup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* BOOKING STYLE */
+#booking {
+    background: #fef9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+#booking h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+#booking p {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/* CONTACT STYLE*/
+.lokasi {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.lokasi h2{
+    font-family: 'Lora', serif;
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#contact {
+    background: #ffffff;
+    justify-content: center;
+}
+
+#contact h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+#contact p {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Style for social media icons */
+#contact a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#contact ul,li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#contact i {
+    margin-right: 8px;
+    color: #fb6969;
+}
+
+#contact a:hover i {
+    color: #C13584; /* Instagram's brand color */
+}
+
+#contact a[href*="whatsapp"] i {
+    color: #25D366; /* WhatsApp's brand color */
+}
+
+#contact a:hover[href*="whatsapp"] i {
+    color: #128C7E;
+}
+
+/*FOOTER STYLE*/
+footer {
+    background: #F7B5CA;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* RESPONSIVE STYLE*/
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Mengecilkan ukuran font */
+    }
+
+    .home-image {
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #f0a8d08e;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .gallery img {
+        width: 90%;
+        margin: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .text-content {
+        margin-top: 20px;
+        text-align: center; 
+    }
+
+    #booking {
+        padding: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    button.btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        margin-bottom: 10px; 
+    }
+}

@@ -75,6 +75,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    font-weight: bold;
 }
 
 nav a {
@@ -145,28 +146,32 @@ section {
     align-items: center;
 }
 
-.home-content {
-    align-items: center;
-    padding: 20px;
-}
-
 .home-image {
     max-width: 50%;
     border-radius: 10px;
     align-content: center;
 }
 
-.text-content h2, .text-content h3 {
+.text-content h2 {
     font-family: 'Lora', serif;
+    margin-bottom: 20px;
+}
+
+.text-content h3 {
+    font-family: 'Lora', serif;
+    margin-top: 20px;
 }
 
 .text-content p {
     font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
 .buttons {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .buttons .btn {
@@ -335,11 +340,50 @@ footer {
     background: #F7B5CA;
     color: white;
     text-align: center;
-    padding: 15px 0;
     margin-top: auto;
 }
 
+footer p{
+    padding: 20px;
+}
+
+
+#footer .social-media {
+    margin-top: 10px;
+    background: #ffbad1;
+    padding: 5px;
+}
+
+#footer .social-media p {
+    margin-bottom: 10px;
+}
+
+#footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#footer .social-media a:hover {
+    color: #ff90cd;
+}
+
+#footer .additional-content {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+
 /* RESPONSIVE STYLE*/
+@media (min-width: 769px) {
+    nav p {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 0.9rem; /* Mengecilkan ukuran font */
@@ -353,16 +397,25 @@ footer {
         align-items: center;
     }
 
+    nav p {
+        display: inline;
+        position: absolute;
+        left: 315px;
+        top: 27px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
+
     nav ul {
         flex-direction: column;
         position: absolute;
-        top: 80px;
         left: -100%;
         width: 100%;
         height: 100vh;
-        background: #f0a8d08e;
+        top: 80px;
+        background: #ff90cdb0;
         text-align: center;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
 
     nav ul.active {
@@ -421,5 +474,10 @@ footer {
 
     .buttons .btn {
         margin-bottom: 10px; 
+    }
+
+    #footer .social-media a {
+        display: inline-block;
+        margin-bottom: 10px;
     }
 }
